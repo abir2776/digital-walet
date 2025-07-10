@@ -9,7 +9,7 @@ cd digital-walet
 
 ### 🐍 2. Create and Activate a Virtual Environment
 python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+# For Linux or macOS: source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 
 ### 📥 3. Install Project Dependencies
 pip install -r requirements.txt
