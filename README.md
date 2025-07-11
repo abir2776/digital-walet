@@ -29,9 +29,19 @@ go to http://127.0.0.1:8000/docs/swagger to check all available endpoint
 
 To register a new user, send a POST request to the following endpoint:
 
-POST /api/v1/auth/register
+POST http://127.0.0.1:8000//api/v1/auth/register Make sure to include the required fields (e.g., email, password, first_name, last_name) in the request body.
 
-Make sure to include the required fields (e.g., username, email, password) in the request body.
+After creating user, send a POST request to the following endpoint with email and password to create access and refresh token:
+POST http://127.0.0.1:8000//api/v1/token 
+
+After giving authorization with access token send a GET request to the following endpoint to check the balance:
+GET http://127.0.0.1:8000//api/v1/wallet/balance
+
+Send POST request with transaction_type,amount,description and transfer_user if transaction_type is TRANSFER to create a transaction:
+POST  http://127.0.0.1:8000//api/v1/wallet/transactions
+
+Send GET request to the following endpoint to get the list of transaction:
+GET http://127.0.0.1:8000//api/v1/wallet/transactions
 
 ---
 
