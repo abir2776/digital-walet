@@ -8,14 +8,14 @@ git clone https://github.com/abir2776/digital-walet.git
 cd digital-walet
 
 ### 🐍 2. Create and Activate a Virtual Environment
-python -m venv venv
+python3 -m venv venv
 # For Linux or macOS: source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 
 ### 📥 3. Install Project Dependencies
 pip install -r requirements.txt
 
 ### ⚙️ 4. Run Migrations (if necessary)
-python manage.py migrate
+python3 manage.py migrate
 
 ### 🏃 5. Start the Development Server
 python manage.py runserver
@@ -23,6 +23,7 @@ python manage.py runserver
 The server will start at: http://127.0.0.1:8000/
 
 ---
+go to http://127.0.0.1:8000/docs/swagger to check all available endpoint 
 
 ## 🧾 User Registration
 
